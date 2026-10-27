@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews – Veeru Infotech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="popup-slot"></div>
+  <div id="topbar-slot"></div>
+  <div id="header-slot"></div>
+
+  <main>
+    <div class="page-banner">
+      <h1>Customer Reviews</h1>
+      <p>What our customers say about Veeru Infotech.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Reviews</span></div>
+    </div>
+    <section class="reviews-section">
+      <div class="container">
+        <div class="google-rating-banner reveal">
+          <div class="excellent-label">Excellent</div>
+          <div class="big-stars">★★★★★</div>
+          <div class="based-on">Based on 942 reviews</div>
+          <div class="google-logo-text">
+            <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+          </div>
+        </div>
+        <div class="review-grid" id="allReviews"></div>
+        <div class="text-center" style="margin-top: 3rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="write-review.html" class="btn"><i class="fas fa-pen"></i> Write a Review</a>
+          <a href="https://www.instagram.com/veeruinfotech" target="_blank" class="btn btn-outline"><i class="fab fa-instagram"></i> Follow Us on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-slot"></div>
+  <div id="floating-slot"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/partials.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function renderAllReviews() {
+      const container = document.getElementById('allReviews');
+      if (!container) return;
+      container.innerHTML = reviewsData.map(r => `
+        <div class="review-card">
+          <div class="stars">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
+          <p>"${r.text}"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">${r.name.charAt(0).toUpperCase()}</div>
+            <div class="reviewer-info">
+              <strong>${r.name}</strong>
+              <span>${r.timeAgo} <i class="fab fa-google" style="color:#4285F4; font-size: 0.7rem;"></i></span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+    document.addEventListener('DOMContentLoaded', renderAllReviews);
+  </script>
+</body>
+</html>

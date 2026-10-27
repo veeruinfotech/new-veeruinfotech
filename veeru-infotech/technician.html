@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join as Technician – Veeru Infotech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="popup-slot"></div>
+  <div id="topbar-slot"></div>
+  <div id="header-slot"></div>
+
+  <main>
+    <div class="page-banner">
+      <h1>Join as a Technician</h1>
+      <p>Be a part of Veeru Infotech's growing team of experts.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Join as Technician</span></div>
+    </div>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-wrapper reveal">
+            <h3>Technician Application Form</h3>
+            <p style="color: var(--text-medium); font-size: 0.9rem; margin-bottom: 1.5rem;">Fill in your details and our team will reach out to you soon.</p>
+            <form id="technicianForm" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="e4bff3d8-d9e6-4ee5-aa7f-dca1505ad66b">
+              <input type="hidden" name="subject" value="New Technician Application - Veeru Infotech">
+              <input type="hidden" name="formatted_email" id="techFormattedEmail" value="">
+              <input type="hidden" name="Form Type" value="Technician Application">
+
+              <div class="form-group">
+                <label for="techName">Full Name <span class="required">*</span></label>
+                <input type="text" id="techName" name="Technician Name" required placeholder="e.g. Suresh Patel">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="techEmail">Email <span class="required">*</span></label>
+                  <input type="email" id="techEmail" name="Email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="techPhone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="techPhone" name="Phone" required placeholder="98765 43210">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="techAddress">Address <span class="required">*</span></label>
+                <input type="text" id="techAddress" name="Address" required placeholder="Your full address">
+              </div>
+              <div class="form-group">
+                <label for="techField">Specific Field / Skill <span class="required">*</span></label>
+                <select id="techField" name="Specific Field" required>
+                  <option value="">-- Select Your Expertise --</option>
+                  <option value="AC">AC (Air Conditioner)</option>
+                  <option value="TV">TV Repair</option>
+                  <option value="Laptop">Laptop / Computer</option>
+                  <option value="CCTV">CCTV Installation & Repair</option>
+                  <option value="Printer">Printer Service</option>
+                  <option value="Fire Safety">Fire Safety System</option>
+                  <option value="Networking">Networking</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group" id="techOtherGroup" style="display: none;">
+                <label for="techOther">Please specify your field <span class="required">*</span></label>
+                <input type="text" id="techOther" name="Other Field">
+              </div>
+              <div class="form-group">
+                <label for="techExperience">Years of Experience</label>
+                <input type="text" id="techExperience" name="Experience" placeholder="e.g. 3 years">
+              </div>
+              <div class="form-group">
+                <label for="techDescription">Description / Message <span class="required">*</span></label>
+                <textarea id="techDescription" name="Description" required placeholder="Tell us about your skills..."></textarea>
+              </div>
+              <div class="text-center"><button type="submit" class="btn" style="width: 100%;">Submit Application <i class="fas fa-paper-plane"></i></button></div>
+            </form>
+          </div>
+          <div class="contact-info-wrapper reveal">
+            <div class="contact-info-card" style="margin-bottom: 1.5rem;">
+              <h3 style="color: var(--navy); margin-bottom: 1.2rem; font-size: 1.1rem;"><i class="fas fa-briefcase" style="color: var(--accent);"></i> Why Join Us?</h3>
+              <div class="contact-info-item"><i class="fas fa-check-circle" style="color: var(--green);"></i><div><strong>Steady Work</strong><p>Regular service calls & installations</p></div></div>
+              <div class="contact-info-item"><i class="fas fa-check-circle" style="color: var(--green);"></i><div><strong>Fair Pay</strong><p>Competitive rates with on-time payment</p></div></div>
+              <div class="contact-info-item"><i class="fas fa-check-circle" style="color: var(--green);"></i><div><strong>Growth</strong><p>Learn new skills with our experienced team</p></div></div>
+              <div class="contact-info-item"><i class="fas fa-check-circle" style="color: var(--green);"></i><div><strong>Support</strong><p>Tools, spares & technical backup provided</p></div></div>
+            </div>
+            <div class="contact-info-card">
+              <h3 style="color: var(--navy); margin-bottom: 1.2rem; font-size: 1.1rem;"><i class="fas fa-headset" style="color: var(--accent);"></i> Need Help?</h3>
+              <div class="contact-info-item"><i class="fas fa-phone-alt"></i><div><strong>Call Us</strong><p>94082 82463 / 87808 43021</p></div></div>
+              <div class="contact-info-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><p>veeruinfotech408@gmail.com</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-slot"></div>
+  <div id="floating-slot"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/partials.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

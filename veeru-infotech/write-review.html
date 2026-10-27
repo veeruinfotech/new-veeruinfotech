@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write a Review – Veeru Infotech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="popup-slot"></div>
+  <div id="topbar-slot"></div>
+  <div id="header-slot"></div>
+
+  <main>
+    <div class="page-banner">
+      <h1>Write a Review</h1>
+      <p>Share your experience with Veeru Infotech — your feedback helps us improve!</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <a href="reviews.html">Reviews</a> / <span>Write a Review</span></div>
+    </div>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-wrapper reveal">
+            <h3>Share Your Experience</h3>
+            <p style="color: var(--text-medium); font-size: 0.9rem; margin-bottom: 1.5rem;">Tell us about your service or purchase — it helps us serve you better.</p>
+            <form id="reviewForm" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="e4bff3d8-d9e6-4ee5-aa7f-dca1505ad66b">
+              <input type="hidden" name="subject" value="New Review - Veeru Infotech">
+              <input type="hidden" name="formatted_email" id="reviewFormattedEmail" value="">
+              <input type="hidden" name="Form Type" value="Customer Review">
+
+              <div class="form-group">
+                <label>Your Rating <span class="required">*</span></label>
+                <div class="star-rating" id="starRating">
+                  <i class="fas fa-star" data-rating="1"></i>
+                  <i class="fas fa-star" data-rating="2"></i>
+                  <i class="fas fa-star" data-rating="3"></i>
+                  <i class="fas fa-star" data-rating="4"></i>
+                  <i class="fas fa-star" data-rating="5"></i>
+                </div>
+                <input type="hidden" id="ratingValue" name="Rating" required>
+                <span class="rating-text" id="ratingText">Tap a star to rate</span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="revName">Your Name <span class="required">*</span></label>
+                  <input type="text" id="revName" name="Customer Name" required placeholder="e.g. Ramesh Patel">
+                </div>
+                <div class="form-group">
+                  <label for="revPhone">Phone (optional)</label>
+                  <input type="tel" id="revPhone" name="Phone" placeholder="98765 43210">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>What did you purchase? <span class="required">*</span></label>
+                <div class="toggle-group" id="revTypeToggle">
+                  <button type="button" class="toggle-btn active" data-type="Service"><i class="fas fa-tools"></i> Service</button>
+                  <button type="button" class="toggle-btn" data-type="Product"><i class="fas fa-box"></i> Product</button>
+                </div>
+                <input type="hidden" id="revType" name="Review Type" value="Service" required>
+              </div>
+
+              <div class="form-group" id="revServiceGroup">
+                <label for="revService">Which Service? <span class="required">*</span></label>
+                <select id="revService" name="Service">
+                  <option value="">-- Select Service --</option>
+                  <option value="AC Service & Repair">AC Service & Repair</option>
+                  <option value="TV Repair">TV Repair</option>
+                  <option value="Refrigerator Repair">Refrigerator Repair</option>
+                  <option value="CCTV Installation">CCTV Installation</option>
+                  <option value="CCTV Repair">CCTV Repair</option>
+                  <option value="Laptop Repair">Laptop Repair</option>
+                  <option value="Computer Repair">Computer Repair</option>
+                  <option value="Chip Level Repair">Chip Level Repair</option>
+                  <option value="Printer Service">Printer Service</option>
+                  <option value="Fire Safety System">Fire Safety System</option>
+                  <option value="Networking">Networking</option>
+                  <option value="SSD / RAM Upgrade">SSD / RAM Upgrade</option>
+                  <option value="AMC / Maintenance">AMC / Maintenance</option>
+                </select>
+              </div>
+
+              <div class="form-group" id="revProductGroup" style="display: none;">
+                <label for="revProduct">Product Details <span class="required">*</span></label>
+                <input type="text" id="revProduct" name="Product Details" placeholder="e.g. HP Laptop 15s, i5 11th Gen">
+              </div>
+
+              <div class="form-group">
+                <label for="revDescription">Your Review <span class="required">*</span></label>
+                <textarea id="revDescription" name="Review Description" required placeholder="Tell us about your experience..." style="min-height: 130px;"></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn" style="width: 100%;">Submit Review <i class="fas fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+          <div class="contact-info-wrapper reveal">
+            <div class="contact-info-card" style="margin-bottom: 1.5rem;">
+              <h3 style="color: var(--navy); margin-bottom: 1.2rem; font-size: 1.1rem;"><i class="fas fa-star" style="color: #f5b342;"></i> Your Feedback Matters</h3>
+              <p style="color: var(--text-medium); font-size: 0.92rem; line-height: 1.7;">Every review helps us improve our service. We truly appreciate your time!</p>
+            </div>
+            <a href="reviews.html" class="btn btn-outline" style="width: 100%;"><i class="fas fa-star"></i> View All Reviews</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-slot"></div>
+  <div id="floating-slot"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/partials.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

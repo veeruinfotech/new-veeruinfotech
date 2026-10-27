@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products – Veeru Infotech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="popup-slot"></div>
+  <div id="topbar-slot"></div>
+  <div id="header-slot"></div>
+
+  <main>
+    <div class="page-banner">
+      <h1>Our Products</h1>
+      <p>Computer hardware, CCTV, printers, laptops, fire safety — wholesale & retail at best prices.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Products</span></div>
+    </div>
+    <section class="products-section">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2>All Products</h2>
+          <p>Click a category to filter. Prices are indicative — final price depends on brand & model.</p>
+        </div>
+
+        <div class="filter-tabs reveal" id="filterTabs">
+          <button class="filter-tab active" data-filter="all"><i class="fas fa-th"></i>All</button>
+          <button class="filter-tab" data-filter="computer"><i class="fas fa-desktop"></i>Computer</button>
+          <button class="filter-tab" data-filter="cctv"><i class="fas fa-video"></i>CCTV</button>
+          <button class="filter-tab" data-filter="printer"><i class="fas fa-print"></i>Printer</button>
+          <button class="filter-tab" data-filter="laptop"><i class="fas fa-laptop"></i>Laptop</button>
+          <button class="filter-tab" data-filter="fire"><i class="fas fa-fire-extinguisher"></i>Fire Safety</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+          <!-- COMPUTER -->
+          <div class="product-card reveal" data-category="computer">
+            <div class="product-image"><span class="product-badge">Popular</span>
+              <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=500&q=80" alt="Desktop Computer" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Desktop Computer</div>
+              <h3>Custom Desktop PC</h3>
+              <p>Custom-built desktop for home, office & gaming. Choose your config — we assemble and deliver.</p>
+              <div class="product-specs"><span>Custom Build</span><span>All Brands</span><span>Warranty</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Available Configurations</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Office PC (i3 + 8GB)</span><span class="alt-price">₹24,999</span></div>
+                  <div class="product-alt-option"><span>Gaming PC (Ryzen 5 + GTX 1650)</span><span class="alt-price">₹47,300</span></div>
+                  <div class="product-alt-option"><span>High-End (i7 + RTX 3060)</span><span class="alt-price">₹1,29,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹24,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="computer">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=500&q=80" alt="All-in-One PC" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">All-in-One PC</div>
+              <h3>All-in-One Desktop PC</h3>
+              <p>Space-saving AIO PC with built-in display, camera & speakers. Perfect for home & office.</p>
+              <div class="product-specs"><span>AIO</span><span>FHD Display</span><span>WiFi</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Model Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>21.5" i3 12th Gen</span><span class="alt-price">₹38,999</span></div>
+                  <div class="product-alt-option"><span>23.8" i5 12th Gen</span><span class="alt-price">₹52,499</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹38,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="computer">
+            <div class="product-image"><span class="product-badge">Best Seller</span>
+              <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&q=80" alt="Monitor" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Computer Monitor</div>
+              <h3>Full HD LED Monitor</h3>
+              <p>IPS display with HDMI/VGA. Ideal for office, home & gaming.</p>
+              <div class="product-specs"><span>FHD</span><span>IPS</span><span>HDMI</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Available Sizes</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>22" FHD 75Hz</span><span class="alt-price">₹7,999</span></div>
+                  <div class="product-alt-option"><span>24" FHD 75Hz</span><span class="alt-price">₹9,999</span></div>
+                  <div class="product-alt-option"><span>24" 144Hz Gaming</span><span class="alt-price">₹14,999</span></div>
+                  <div class="product-alt-option"><span>27" 2K QHD</span><span class="alt-price">₹22,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹7,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="computer">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80" alt="Keyboard Mouse" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Keyboard & Mouse</div>
+              <h3>Keyboard & Mouse Combo</h3>
+              <p>Wired and wireless combos available. Ergonomic design for all-day comfort.</p>
+              <div class="product-specs"><span>Wireless</span><span>Wired</span><span>Combo</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Wired & Wireless Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Wired Combo (Basic)</span><span class="alt-price">₹599</span></div>
+                  <div class="product-alt-option"><span>Wireless Combo (HP KM250)</span><span class="alt-price">₹1,399</span></div>
+                  <div class="product-alt-option"><span>RGB Mechanical KB + Mouse</span><span class="alt-price">₹2,199</span></div>
+                  <div class="product-alt-option"><span>Logitech MK240 Wireless</span><span class="alt-price">₹1,895</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹599 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="computer">
+            <div class="product-image"><span class="product-badge new">Hot</span>
+              <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=500&q=80" alt="RAM SSD" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">RAM & SSD / HDD</div>
+              <h3>Memory & Storage Upgrades</h3>
+              <p>Upgrade your PC or laptop with RAM, SSD or HDD. Installation available.</p>
+              <div class="product-specs"><span>DDR4</span><span>NVMe SSD</span><span>HDD</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Component Prices</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>8GB DDR4 RAM</span><span class="alt-price">₹1,899</span></div>
+                  <div class="product-alt-option"><span>16GB DDR4 RAM</span><span class="alt-price">₹3,499</span></div>
+                  <div class="product-alt-option"><span>256GB SATA SSD</span><span class="alt-price">₹2,299</span></div>
+                  <div class="product-alt-option"><span>512GB NVMe SSD</span><span class="alt-price">₹3,499</span></div>
+                  <div class="product-alt-option"><span>1TB SATA HDD</span><span class="alt-price">₹4,199</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹1,899 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="computer">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80" alt="Motherboard" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Motherboard & Processor</div>
+              <h3>Motherboard & CPU Combo</h3>
+              <p>Intel & AMD options available. Compatible motherboards for every budget.</p>
+              <div class="product-specs"><span>Intel</span><span>AMD</span><span>M.2</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Popular Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>H510M Motherboard</span><span class="alt-price">₹6,999</span></div>
+                  <div class="product-alt-option"><span>B550 Gaming Motherboard</span><span class="alt-price">₹11,499</span></div>
+                  <div class="product-alt-option"><span>Intel i5 11th Gen</span><span class="alt-price">₹16,600</span></div>
+                  <div class="product-alt-option"><span>AMD Ryzen 5 5600</span><span class="alt-price">₹12,450</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹6,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="computer">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=500&q=80" alt="UPS SMPS" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">UPS & SMPS</div>
+              <h3>Power Backup & Supply</h3>
+              <p>Protect your PC from power cuts and voltage fluctuations.</p>
+              <div class="product-specs"><span>600VA UPS</span><span>450W SMPS</span><span>650W 80+</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>450W SMPS</span><span class="alt-price">₹1,499</span></div>
+                  <div class="product-alt-option"><span>600VA UPS (PC)</span><span class="alt-price">₹2,999</span></div>
+                  <div class="product-alt-option"><span>650W 80+ Bronze PSU</span><span class="alt-price">₹4,499</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹1,499 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="computer">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1618410320928-25228d811631?w=500&q=80" alt="Accessories" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Computer Accessories</div>
+              <h3>PC Accessories & Peripherals</h3>
+              <p>Pen drives, webcams, headsets, speakers, mouse pads & more.</p>
+              <div class="product-specs"><span>Pen Drive</span><span>Webcam</span><span>Headset</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Popular Items</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>64GB Pen Drive</span><span class="alt-price">₹429</span></div>
+                  <div class="product-alt-option"><span>HD Webcam 1080p</span><span class="alt-price">₹1,899</span></div>
+                  <div class="product-alt-option"><span>Gaming Headset</span><span class="alt-price">₹1,299</span></div>
+                  <div class="product-alt-option"><span>2.1 Speakers</span><span class="alt-price">₹1,699</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹429 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <!-- CCTV -->
+          <div class="product-card reveal" data-category="cctv">
+            <div class="product-image"><span class="product-badge">Best Seller</span>
+              <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=500&q=80" alt="CCTV" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">CCTV Camera</div>
+              <h3>HD CCTV Camera</h3>
+              <p>Full HD security cameras with night vision. Hikvision, CP Plus, Dahua.</p>
+              <div class="product-specs"><span>2MP-5MP</span><span>Night Vision</span><span>Dome/Bullet</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Brand Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Hikvision 2MP Dome</span><span class="alt-price">₹2,199</span></div>
+                  <div class="product-alt-option"><span>CP Plus 2.4MP Bullet</span><span class="alt-price">₹2,499</span></div>
+                  <div class="product-alt-option"><span>Dahua 5MP ColorVu</span><span class="alt-price">₹3,899</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹2,199 <span>per unit</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="cctv">
+            <div class="product-image"><span class="product-badge new">New</span>
+              <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=500&q=80" alt="IP Camera" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">IP Camera</div>
+              <h3>Network IP Camera</h3>
+              <p>PoE-enabled IP cameras with remote viewing. 2MP to 8MP options.</p>
+              <div class="product-specs"><span>PoE</span><span>2MP-8MP</span><span>Remote View</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>2MP IP Dome</span><span class="alt-price">₹2,999</span></div>
+                  <div class="product-alt-option"><span>4MP IP Bullet</span><span class="alt-price">₹4,499</span></div>
+                  <div class="product-alt-option"><span>8MP 4K IP Camera</span><span class="alt-price">₹8,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹2,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="cctv">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=500&q=80" alt="DVR NVR" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">DVR & NVR</div>
+              <h3>DVR / NVR Recorder</h3>
+              <p>4/8/16 channel recorders with H.265 compression. Mobile viewing supported.</p>
+              <div class="product-specs"><span>4/8/16 Ch</span><span>H.265</span><span>Mobile App</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Channel Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>4 Channel DVR</span><span class="alt-price">₹4,999</span></div>
+                  <div class="product-alt-option"><span>8 Channel DVR</span><span class="alt-price">₹7,499</span></div>
+                  <div class="product-alt-option"><span>4 Channel NVR (PoE)</span><span class="alt-price">₹6,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹4,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="cctv">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1531492746076-161ca9bcad58?w=500&q=80" alt="CCTV HDD" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Surveillance HDD</div>
+              <h3>CCTV Surveillance Hard Disk</h3>
+              <p>24/7 surveillance-grade hard disks. WD Purple, Seagate Skyhawk.</p>
+              <div class="product-specs"><span>1TB-4TB</span><span>Surveillance</span><span>24/7</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Capacity Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>1TB Surveillance HDD</span><span class="alt-price">₹4,499</span></div>
+                  <div class="product-alt-option"><span>2TB Surveillance HDD</span><span class="alt-price">₹6,999</span></div>
+                  <div class="product-alt-option"><span>4TB Surveillance HDD</span><span class="alt-price">₹10,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹4,499 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="cctv">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&q=80" alt="PoE Switch" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">PoE Switch</div>
+              <h3>PoE Network Switch</h3>
+              <p>Power over Ethernet switches for IP cameras. 4/8/16 port options.</p>
+              <div class="product-specs"><span>4 Port</span><span>8 Port</span><span>16 Port</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Port Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>4 Port PoE Switch</span><span class="alt-price">₹1,999</span></div>
+                  <div class="product-alt-option"><span>8 Port PoE Switch</span><span class="alt-price">₹3,499</span></div>
+                  <div class="product-alt-option"><span>16 Port PoE Switch</span><span class="alt-price">₹6,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹1,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="cctv">
+            <div class="product-image"><span class="product-badge new">New</span>
+              <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=500&q=80" alt="WiFi Camera" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">WiFi Camera</div>
+              <h3>Wireless WiFi Camera</h3>
+              <p>Plug-and-play WiFi cameras with mobile app viewing.</p>
+              <div class="product-specs"><span>WiFi</span><span>Mobile App</span><span>2-Way Audio</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>2MP WiFi Indoor</span><span class="alt-price">₹1,899</span></div>
+                  <div class="product-alt-option"><span>3MP WiFi PTZ</span><span class="alt-price">₹2,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹1,899 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="cctv">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=500&q=80" alt="PTZ" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">PTZ Camera</div>
+              <h3>Pan-Tilt-Zoom Camera</h3>
+              <p>360° rotating cameras with optical zoom. Ideal for large areas.</p>
+              <div class="product-specs"><span>360°</span><span>Optical Zoom</span><span>Auto Track</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>2MP PTZ (5x Zoom)</span><span class="alt-price">₹8,999</span></div>
+                  <div class="product-alt-option"><span>4MP PTZ (10x Zoom)</span><span class="alt-price">₹14,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹8,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="cctv">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1587826080692-f439cd0b70da?w=500&q=80" alt="Biometric" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Biometric Attendance</div>
+              <h3>Biometric Attendance System</h3>
+              <p>Fingerprint & card-based attendance machines for offices & factories.</p>
+              <div class="product-specs"><span>Fingerprint</span><span>Card</span><span>TCP/IP</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>eSSL K30 (Fingerprint)</span><span class="alt-price">₹6,999</span></div>
+                  <div class="product-alt-option"><span>eSSL X990 (Finger + Card)</span><span class="alt-price">₹9,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹6,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="cctv">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&q=80" alt="CAT-6" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">CCTV Accessories</div>
+              <h3>CAT-6 Cable for CCTV</h3>
+              <p>Pure copper CAT-6 cable for CCTV & networking. 90m/305m rolls.</p>
+              <div class="product-specs"><span>CAT-6</span><span>Copper</span><span>90m Roll</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>CAT-6 90m (Copper)</span><span class="alt-price">₹1,299</span></div>
+                  <div class="product-alt-option"><span>CAT-6 305m Roll</span><span class="alt-price">₹4,499</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹1,299 <span>per 90m</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <!-- PRINTER -->
+          <div class="product-card reveal" data-category="printer">
+            <div class="product-image"><span class="product-badge">Best Seller</span>
+              <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=500&q=80" alt="Laser Printer" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Laser Printer</div>
+              <h3>Monochrome Laser Printer</h3>
+              <p>Fast, reliable laser printing for office & home.</p>
+              <div class="product-specs"><span>B&W</span><span>20+ PPM</span><span>WiFi</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Model Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>HP LaserJet Pro M126nw</span><span class="alt-price">₹22,989</span></div>
+                  <div class="product-alt-option"><span>Canon LBP2900</span><span class="alt-price">₹12,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹12,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="printer">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=500&q=80" alt="Inkjet Printer" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Inkjet Printer</div>
+              <h3>Color Inkjet Printer</h3>
+              <p>Affordable color printing. Ink tank models available.</p>
+              <div class="product-specs"><span>Color</span><span>Inkjet</span><span>Low Cost</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>HP Ink Tank 319</span><span class="alt-price">₹8,999</span></div>
+                  <div class="product-alt-option"><span>Epson L3250 (WiFi)</span><span class="alt-price">₹12,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹8,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="printer">
+            <div class="product-image"><span class="product-badge new">Popular</span>
+              <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=500&q=80" alt="AIO Printer" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">All-in-One Printer</div>
+              <h3>Print, Scan, Copy Printer</h3>
+              <p>Multi-function printers with WiFi. Save space and money.</p>
+              <div class="product-specs"><span>Print</span><span>Scan</span><span>Copy</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Model Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>HP Smart Tank 583</span><span class="alt-price">₹10,119</span></div>
+                  <div class="product-alt-option"><span>HP OfficeJet Pro 9730</span><span class="alt-price">₹38,361</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹10,119 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="printer">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=500&q=80" alt="Toner" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Toner & Ink</div>
+              <h3>Toner Cartridge & Ink Bottle</h3>
+              <p>Genuine & compatible toner/ink for HP, Canon, Epson, Brother.</p>
+              <div class="product-specs"><span>Toner</span><span>Ink</span><span>Refill</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Popular Items</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>HP 682 Ink Bottle (Black)</span><span class="alt-price">₹399</span></div>
+                  <div class="product-alt-option"><span>Brother TN-2365 Toner</span><span class="alt-price">₹3,572</span></div>
+                  <div class="product-alt-option"><span>Compatible Toner (HP 88A)</span><span class="alt-price">₹599</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹399 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="printer">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=500&q=80" alt="Scanner" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Document Scanner</div>
+              <h3>Document Scanner</h3>
+              <p>Flatbed & ADF scanners for digitizing documents.</p>
+              <div class="product-specs"><span>Flatbed</span><span>ADF</span><span>Duplex</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Canon LiDE 300</span><span class="alt-price">₹5,999</span></div>
+                  <div class="product-alt-option"><span>HP ScanJet Pro 2000</span><span class="alt-price">₹18,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹5,999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <!-- LAPTOP -->
+          <div class="product-card reveal" data-category="laptop">
+            <div class="product-image"><span class="product-badge">Best Seller</span>
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&q=80" alt="Business Laptop" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Business Laptop</div>
+              <h3>Business Laptop (i5/i7)</h3>
+              <p>Reliable laptops for professionals. Dell, HP, Lenovo.</p>
+              <div class="product-specs"><span>i5/i7</span><span>16GB RAM</span><span>512GB SSD</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Popular Models</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>HP 15s (i3 12th Gen)</span><span class="alt-price">₹51,100</span></div>
+                  <div class="product-alt-option"><span>Dell Inspiron 7430 (i5)</span><span class="alt-price">₹85,390</span></div>
+                  <div class="product-alt-option"><span>Lenovo IdeaPad Slim 5 (i5)</span><span class="alt-price">₹59,990</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹51,100 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="laptop">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&q=80" alt="Student Laptop" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Student Laptop</div>
+              <h3>Budget Laptop for Students</h3>
+              <p>Affordable laptops for online classes & assignments.</p>
+              <div class="product-specs"><span>i3/Ryzen 3</span><span>8GB RAM</span><span>256GB SSD</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Budget Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>ASUS Vivobook 15 (i3 11th)</span><span class="alt-price">₹33,599</span></div>
+                  <div class="product-alt-option"><span>HP 15 (Ryzen 5)</span><span class="alt-price">₹47,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹33,599 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="laptop">
+            <div class="product-image"><span class="product-badge new">Gaming</span>
+              <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=500&q=80" alt="Gaming Laptop" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Gaming Laptop</div>
+              <h3>Gaming Laptop (RTX Graphics)</h3>
+              <p>High-performance laptops with dedicated graphics.</p>
+              <div class="product-specs"><span>RTX 3050+</span><span>144Hz</span><span>16GB RAM</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Popular Models</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>HP Victus (Ryzen 5 + RX 6500M)</span><span class="alt-price">₹48,499</span></div>
+                  <div class="product-alt-option"><span>Lenovo IdeaPad Gaming 3</span><span class="alt-price">₹63,990</span></div>
+                  <div class="product-alt-option"><span>ASUS TUF F15 (RTX 3050)</span><span class="alt-price">₹77,990</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹48,499 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="laptop">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?w=500&q=80" alt="Laptop RAM" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Laptop RAM & SSD</div>
+              <h3>Laptop Memory & Storage Upgrade</h3>
+              <p>Speed up your laptop with RAM & SSD upgrades.</p>
+              <div class="product-specs"><span>SODIMM</span><span>NVMe</span><span>SATA</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Upgrade Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>8GB DDR4 Laptop RAM</span><span class="alt-price">₹1,899</span></div>
+                  <div class="product-alt-option"><span>16GB DDR4 Laptop RAM</span><span class="alt-price">₹3,599</span></div>
+                  <div class="product-alt-option"><span>256GB NVMe SSD</span><span class="alt-price">₹2,899</span></div>
+                  <div class="product-alt-option"><span>512GB NVMe SSD</span><span class="alt-price">₹4,499</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹1,899 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="laptop">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80" alt="Laptop Bag" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Laptop Bag</div>
+              <h3>Laptop Backpack & Sleeve</h3>
+              <p>Water-resistant laptop bags with padded compartments.</p>
+              <div class="product-specs"><span>14"-17"</span><span>Water Resistant</span><span>Padded</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Basic Laptop Sleeve</span><span class="alt-price">₹599</span></div>
+                  <div class="product-alt-option"><span>Premium Backpack</span><span class="alt-price">₹1,499</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹599 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="laptop">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1587826080692-f439cd0b70da?w=500&q=80" alt="Laptop Stand" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Laptop Stand & Cooling Pad</div>
+              <h3>Laptop Stand & Cooling Pad</h3>
+              <p>Ergonomic stands and cooling pads for better posture & performance.</p>
+              <div class="product-specs"><span>Adjustable</span><span>Cooling Fans</span><span>Portable</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Foldable Laptop Stand</span><span class="alt-price">₹195</span></div>
+                  <div class="product-alt-option"><span>Cooling Pad (2 Fans)</span><span class="alt-price">₹503</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹195 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="laptop">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1587826080692-f439cd0b70da?w=500&q=80" alt="Charger" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Laptop Charger & Battery</div>
+              <h3>Laptop Charger & Battery</h3>
+              <p>Replacement chargers and batteries for all laptop brands.</p>
+              <div class="product-specs"><span>Dell</span><span>HP</span><span>Lenovo</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Compatible Charger (65W)</span><span class="alt-price">₹1,299</span></div>
+                  <div class="product-alt-option"><span>Laptop Battery (OEM)</span><span class="alt-price">₹2,499</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹1,299 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <!-- FIRE -->
+          <div class="product-card reveal" data-category="fire">
+            <div class="product-image"><span class="product-badge">Safety</span>
+              <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" alt="Fire Extinguisher" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Fire Extinguisher</div>
+              <h3>ABC Fire Extinguisher</h3>
+              <p>Multi-purpose dry powder extinguisher. ISI certified with wall mount.</p>
+              <div class="product-specs"><span>ABC Type</span><span>ISI Certified</span><span>Wall Mount</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Size Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>2KG ABC Extinguisher</span><span class="alt-price">₹1,044</span></div>
+                  <div class="product-alt-option"><span>6KG ABC Extinguisher</span><span class="alt-price">₹1,179</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹1,044 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="fire">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" alt="Fire Alarm" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Fire Alarm System</div>
+              <h3>Fire Alarm Panel & Siren</h3>
+              <p>2-zone to multi-zone alarm panels with hooters and detectors.</p>
+              <div class="product-specs"><span>2 Zone</span><span>Siren</span><span>Call Point</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Components</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Agni 2-Zone Panel</span><span class="alt-price">₹3,499</span></div>
+                  <div class="product-alt-option"><span>Manual Call Point</span><span class="alt-price">₹1,153</span></div>
+                  <div class="product-alt-option"><span>Fire Alarm & Siren System</span><span class="alt-price">₹2,999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹1,153 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="fire">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" alt="Smoke Detector" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Smoke Detector</div>
+              <h3>Smoke Detector Alarm</h3>
+              <p>Photoelectric smoke detectors for home & office.</p>
+              <div class="product-specs"><span>Photoelectric</span><span>Battery</span><span>85dB Alarm</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Honeywell SSD-100</span><span class="alt-price">₹1,499</span></div>
+                  <div class="product-alt-option"><span>Honeywell FDC-100 (WiFi)</span><span class="alt-price">₹2,999</span></div>
+                  <div class="product-alt-option"><span>Onebee SM-1508</span><span class="alt-price">₹999</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹999 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="fire">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" alt="Heat Detector" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Heat Detector</div>
+              <h3>Heat Detector Alarm</h3>
+              <p>Rate-of-rise heat detectors for kitchens & dusty areas.</p>
+              <div class="product-specs"><span>Rate of Rise</span><span>Fixed Temp</span><span>Wall Mount</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>ZEB Agni Heat Detector</span><span class="alt-price">₹528</span></div>
+                  <div class="product-alt-option"><span>Agni Heat Detector</span><span class="alt-price">₹599</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹528 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-category="fire">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" alt="Emergency Light" loading="lazy">
+            </div>
+            <div class="product-info">
+              <div class="product-category">Emergency Light</div>
+              <h3>Rechargeable Emergency Light</h3>
+              <p>LED emergency lights & torches for power outages.</p>
+              <div class="product-specs"><span>LED</span><span>4+ hrs Backup</span><span>Rechargeable</span></div>
+              <div class="product-alt">
+                <div class="product-alt-label">Options</div>
+                <div class="product-alt-options">
+                  <div class="product-alt-option"><span>Crompton 8.5W Emergency Bulb</span><span class="alt-price">₹214</span></div>
+                  <div class="product-alt-option"><span>Philips Ujjwal Mini Lantern</span><span class="alt-price">₹791</span></div>
+                  <div class="product-alt-option"><span>Pigeon Radiance LED Torch</span><span class="alt-price">₹528</span></div>
+                </div>
+              </div>
+              <div class="product-price"><div class="price-tag">₹214 <span>onwards</span></div><a href="contact.html" class="product-btn">Enquire</a></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="noProducts" style="display:none; text-align:center; padding:3rem 1rem; color:var(--text-medium);">
+          <i class="fas fa-search" style="font-size:3rem; color:var(--accent-light); margin-bottom:1rem; display:block;"></i>
+          <p style="font-size:1.1rem;">No products in this category yet.</p>
+        </div>
+
+        <div class="text-center" style="margin-top: 3rem;">
+          <a href="contact.html" class="btn">Request Full Price List <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-slot"></div>
+  <div id="floating-slot"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/partials.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
